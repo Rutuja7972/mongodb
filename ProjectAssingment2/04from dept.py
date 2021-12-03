@@ -6,6 +6,6 @@ coll=db["workers"]
 
 dept=input("Department name: ")
 
-all=coll.find({"dept":"it"})
+all=coll.find({"dept":dept})
 for worker in all:
     print(worker)
